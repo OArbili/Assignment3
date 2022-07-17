@@ -26,6 +26,7 @@ from torchvision import transforms
 
 from preprocess import Flower102Data,GradualWarmupSchedulerV2
 
+''' This is the main class which runs the pre-trained CNN resnet101 and EfficientNet_b1_ns, efficientnet_b3, efficientnet_b4_ns'''
 class part_2_cnn():
     
     def __init__(self,in_model_type):
@@ -48,6 +49,12 @@ class part_2_cnn():
         self.criterion = nn.CrossEntropyLoss()
         self.scaler = amp.GradScaler()
     
+    ''' This function in charge of the image transofrmation. I used the following transofrmations
+    - RandomResizedCrop
+    - RandomHorizontalFlip
+    - RandomRotation
+    - GaussianBlur
+    '''
     def train_test_img_transformation(self):
         
         self.normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
@@ -56,6 +63,8 @@ class part_2_cnn():
         self.train_trns = transforms.Compose([
             transforms.RandomResizedCrop(self.cfg.image_size),
             transforms.RandomHorizontalFlip(),
+            transforms.RandomRotation(360),
+            transforms.GaussianBlur(3),
             transforms.ToTensor(),
             self.normalize,
         ])
@@ -65,7 +74,8 @@ class part_2_cnn():
             transforms.ToTensor(),
             self.normalize,
         ])
-
+    
+    ''' This function load the data using the helper class Flower102Data in preprocess file '''
     def load_data(self):
         self.dataset_train = Flower102Data(self.cfg.root,self.cfg.ids_train, True, self.train_trns, shots=-1, seed=self.cfg.seed)
         self.dataset_test = Flower102Data(self.cfg.root,self.cfg.ids_test, False, self.test_trns, shots=-1, seed=self.cfg.seed)
@@ -78,6 +88,8 @@ class part_2_cnn():
 
         model.train()
         train_loss = []
+        LOGITS = []
+        TARGETS = []
         bar = tqdm(loader)
         for (data, targets) in bar:
 
@@ -87,16 +99,23 @@ class part_2_cnn():
             with amp.autocast():
                 logits = model(data)
                 loss = self.criterion(logits, targets)
-            self.scaler.scale(loss).backward() 
+            self.scaler.scale(loss).backward()
             self.scaler.step(optimizer)
             self.scaler.update()
 
             loss_np = loss.item()
             train_loss.append(loss_np)
+            LOGITS.append(logits.detach().cpu())
+            TARGETS.append(targets.detach().cpu())
             smooth_loss = sum(train_loss[-50:]) / min(len(train_loss), 50)
             bar.set_description('loss: %.4f, smth: %.4f' % (loss_np, smooth_loss))
 
-        return np.mean(train_loss)
+        train_loss = np.mean(train_loss)
+        LOGITS = torch.cat(LOGITS).float()
+        LOGITS = LOGITS.softmax(1).cpu().numpy()
+        TARGETS = torch.cat(TARGETS).cpu().numpy()
+        acc = accuracy_score(LOGITS.argmax(1),TARGETS)
+        return train_loss,acc
 
 
     def valid_epoch(self,model, loader, get_output=False):
@@ -120,9 +139,10 @@ class part_2_cnn():
         TARGETS = torch.cat(TARGETS).cpu().numpy()
         acc = accuracy_score(LOGITS.argmax(1),TARGETS)
         return val_loss, acc
-
+    
+    ''' This function call the pre-trained model '''
     def build_model(self,fold=0):
-        res_df = pd.DataFrame(columns=['Epoch','lr','train_loss','valid_loss','acc','test_loss','score'])
+        res_df = pd.DataFrame(columns=['Epoch','lr','train_loss','valid_loss','train_acc','valid_acc','test_loss','score'])
         self.model = timm.create_model(self.cfg.enet_type, pretrained=True,num_classes=self.cfg.num_classes).cuda()
         aucs_max = 0
         self.model_file = os.path.join(self.cfg.model_dir, f'{self.cfg.kernel_type}_best_fold{fold}.pth')
@@ -133,15 +153,17 @@ class part_2_cnn():
             print(time.ctime(), 'Epoch:', epoch)
             self.scheduler_warmup.step(epoch-1)
 
-            train_loss = self.train_epoch(self.model, self.train_loader, self.optimizer)
+            train_loss,train_acc = self.train_epoch(self.model, self.train_loader, self.optimizer)
             val_loss, aucs = self.valid_epoch(self.model, self.valid_loader)
 
-            content = time.ctime() + ' ' + f'Fold {fold} Epoch {epoch}, lr: {self.optimizer.param_groups[0]["lr"]:.7f}, train loss: {train_loss:.4f}, valid loss: {(val_loss):.4f}, acc: {aucs:.4f}.'
+            content = time.ctime() + ' ' + f'Fold {fold} Epoch {epoch}, lr: {self.optimizer.param_groups[0]["lr"]:.7f}, train loss: {train_loss:.4f}, valid loss: {(val_loss):.4f}, train_acc: {train_acc:.4f}, valid_acc: {aucs:.4f}.'
             res_df = res_df.append({'Epoch':epoch,
                                     'lr':self.optimizer.param_groups[0]["lr"],
                                     'train_loss':train_loss,
                                     'valid_loss':val_loss,
-                                    'acc':aucs},ignore_index=True)
+                                    'train_acc':train_acc,
+                                    'valid_acc':aucs,
+                                   },ignore_index=True)
             print(content)
             with open(self.cfg.log_file, 'a') as appender:
                 appender.write(content + '\n')

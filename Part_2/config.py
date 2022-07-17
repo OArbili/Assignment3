@@ -4,6 +4,7 @@ import pandas as pd
 import scipy.io as sio
 from sklearn.model_selection import train_test_split
 
+''' This config class holds all model configurations. I used similar configuration for all pre-trained networks'''
 class model_cfg():
     
     def __init__(self,in_model_type):
@@ -19,7 +20,7 @@ class model_cfg():
         self.num_classes = 102
         # n_ch = 3
         self.image_size = 256
-        self.batch_size = 8
+        self.batch_size = 64
         self.init_lr = 3e-4
         self.warmup_epo = 1
 

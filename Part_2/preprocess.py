@@ -6,6 +6,7 @@ import scipy.io as sio
 import torch.utils.data as data
 from warmup_scheduler import GradualWarmupScheduler
 
+''' This helper class Gradually warm-up(increasing) learning rate for pytorch's optimizer.'''
 class GradualWarmupSchedulerV2(GradualWarmupScheduler):
     
     def __init__(self, optimizer, multiplier, total_epoch, after_scheduler=None):
@@ -24,6 +25,7 @@ class GradualWarmupSchedulerV2(GradualWarmupScheduler):
         else:
             return [base_lr * ((self.multiplier - 1.) * self.last_epoch / self.total_epoch + 1.) for base_lr in self.base_lrs]
 
+''' This helper class load images and labels.'''
 class Flower102Data(data.Dataset):
     
     def __init__(self, root ,ids , is_train=True, transform=None, shots=-1, seed=0, preload=False,num_classes = 102):
