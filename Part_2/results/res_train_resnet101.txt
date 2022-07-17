@@ -1,0 +1,115 @@
+Fold: 0
+Fold: 0
+Sat Jul 16 12:00:00 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.1456, valid loss: 2.9020, acc: 0.3408.
+Sat Jul 16 12:01:42 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.1312, valid loss: 0.9455, acc: 0.7417.
+Sat Jul 16 12:03:26 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0650, valid loss: 0.5333, acc: 0.8535.
+Sat Jul 16 12:05:08 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.7657, valid loss: 0.4779, acc: 0.8740.
+Sat Jul 16 12:06:52 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.6245, valid loss: 0.3255, acc: 0.9062.
+Sat Jul 16 12:08:35 2022 Fold 0 Epoch 6, lr: 0.0008051, train loss: 0.4981, valid loss: 0.3781, acc: 0.8999.
+Sat Jul 16 12:10:15 2022 Fold 0 Epoch 7, lr: 0.0007548, train loss: 0.4799, valid loss: 0.3186, acc: 0.9126.
+Sat Jul 16 12:11:58 2022 Fold 0 Epoch 8, lr: 0.0006961, train loss: 0.3788, valid loss: 0.2657, acc: 0.9292.
+Sat Jul 16 12:13:40 2022 Fold 0 Epoch 9, lr: 0.0006308, train loss: 0.3566, valid loss: 0.2752, acc: 0.9307.
+Sat Jul 16 12:15:23 2022 Fold 0 Epoch 10, lr: 0.0005605, train loss: 0.3016, valid loss: 0.2233, acc: 0.9429.
+Sat Jul 16 12:17:05 2022 Fold 0 Epoch 11, lr: 0.0004872, train loss: 0.2642, valid loss: 0.2018, acc: 0.9497.
+Sat Jul 16 12:18:47 2022 Fold 0 Epoch 12, lr: 0.0004128, train loss: 0.2225, valid loss: 0.2292, acc: 0.9351.
+Sat Jul 16 12:20:28 2022 Fold 0 Epoch 13, lr: 0.0003395, train loss: 0.1941, valid loss: 0.1699, acc: 0.9575.
+Sat Jul 16 12:22:11 2022 Fold 0 Epoch 14, lr: 0.0002692, train loss: 0.1627, valid loss: 0.1759, acc: 0.9619.
+Sat Jul 16 12:23:53 2022 Fold 0 Epoch 15, lr: 0.0002039, train loss: 0.1485, valid loss: 0.1479, acc: 0.9688.
+Sat Jul 16 12:25:36 2022 Fold 0 Epoch 16, lr: 0.0001452, train loss: 0.1474, valid loss: 0.1574, acc: 0.9634.
+Sat Jul 16 12:27:17 2022 Fold 0 Epoch 17, lr: 0.0000949, train loss: 0.1210, valid loss: 0.1449, acc: 0.9678.
+Sat Jul 16 12:28:58 2022 Fold 0 Epoch 18, lr: 0.0000542, train loss: 0.1136, valid loss: 0.1465, acc: 0.9634.
+Sat Jul 16 12:30:40 2022 Fold 0 Epoch 19, lr: 0.0000244, train loss: 0.0941, valid loss: 0.1395, acc: 0.9683.
+Sat Jul 16 12:32:21 2022 Fold 0 Epoch 20, lr: 0.0000061, train loss: 0.1034, valid loss: 0.1473, acc: 0.9678.
+test loss 0.13166235459220843 score 0.9677576941866145
+Sat Jul 16 16:13:08 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.1682, valid loss: 2.9831, acc: 0.3467.
+Sat Jul 16 16:21:29 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0897, valid loss: 2.6044, acc: 0.4067.
+Sat Jul 16 16:23:13 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 1.9939, valid loss: 0.8436, acc: 0.7529.
+Sat Jul 16 16:24:58 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0035, valid loss: 0.5588, acc: 0.8413.
+Sat Jul 16 16:26:43 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.7341, valid loss: 0.4682, acc: 0.8730.
+Sat Jul 16 16:28:29 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.6045, valid loss: 0.3505, acc: 0.9033.
+Sat Jul 16 16:30:14 2022 Fold 0 Epoch 6, lr: 0.0008051, train loss: 0.5238, valid loss: 0.3235, acc: 0.9077.
+Sat Jul 16 16:31:59 2022 Fold 0 Epoch 7, lr: 0.0007548, train loss: 0.4289, valid loss: 0.2962, acc: 0.9321.
+Sat Jul 16 16:33:45 2022 Fold 0 Epoch 8, lr: 0.0006961, train loss: 0.3915, valid loss: 0.3105, acc: 0.9180.
+Sat Jul 16 16:35:28 2022 Fold 0 Epoch 9, lr: 0.0006308, train loss: 0.3127, valid loss: 0.3133, acc: 0.9214.
+Sat Jul 16 16:37:11 2022 Fold 0 Epoch 10, lr: 0.0005605, train loss: 0.3035, valid loss: 0.2400, acc: 0.9429.
+Sat Jul 16 16:38:56 2022 Fold 0 Epoch 11, lr: 0.0004872, train loss: 0.2313, valid loss: 0.2158, acc: 0.9468.
+Sat Jul 16 16:40:41 2022 Fold 0 Epoch 12, lr: 0.0004128, train loss: 0.2292, valid loss: 0.1879, acc: 0.9546.
+Sat Jul 16 16:42:26 2022 Fold 0 Epoch 13, lr: 0.0003395, train loss: 0.2208, valid loss: 0.1879, acc: 0.9551.
+Sat Jul 16 16:44:12 2022 Fold 0 Epoch 14, lr: 0.0002692, train loss: 0.1713, valid loss: 0.1821, acc: 0.9541.
+Sat Jul 16 16:45:54 2022 Fold 0 Epoch 15, lr: 0.0002039, train loss: 0.1485, valid loss: 0.1849, acc: 0.9521.
+Sat Jul 16 16:47:38 2022 Fold 0 Epoch 16, lr: 0.0001452, train loss: 0.1427, valid loss: 0.1753, acc: 0.9614.
+Sat Jul 16 16:49:23 2022 Fold 0 Epoch 17, lr: 0.0000949, train loss: 0.1267, valid loss: 0.1716, acc: 0.9604.
+Sat Jul 16 16:51:05 2022 Fold 0 Epoch 18, lr: 0.0000542, train loss: 0.1184, valid loss: 0.1525, acc: 0.9644.
+Sat Jul 16 16:52:50 2022 Fold 0 Epoch 19, lr: 0.0000244, train loss: 0.1092, valid loss: 0.1497, acc: 0.9619.
+Sat Jul 16 16:54:32 2022 Fold 0 Epoch 20, lr: 0.0000061, train loss: 0.0992, valid loss: 0.1417, acc: 0.9653.
+Sat Jul 16 17:30:30 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0448, valid loss: 2.6361, acc: 0.4194.
+Sat Jul 16 17:32:15 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.0201, valid loss: 0.8912, acc: 0.7549.
+Sat Jul 16 17:34:00 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0722, valid loss: 0.5904, acc: 0.8359.
+test loss 0.5141474089832627 score 0.8417195896433806
+Sat Jul 16 17:38:37 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0739, valid loss: 2.4919, acc: 0.3989.
+Sat Jul 16 17:40:22 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.0011, valid loss: 0.9479, acc: 0.7495.
+Sat Jul 16 17:42:06 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0306, valid loss: 0.5554, acc: 0.8457.
+test loss 0.5446862553235405 score 0.8382999511480215
+Sat Jul 16 17:53:06 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.1110, valid loss: 2.7745, acc: 0.3750.
+Sat Jul 16 17:54:51 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.0276, valid loss: 0.9627, acc: 0.7310.
+Sat Jul 16 17:56:34 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0318, valid loss: 0.6160, acc: 0.8232.
+test loss 0.6109470811425126 score 0.8348803126526624
+Sat Jul 16 17:59:44 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0271, valid loss: 2.6219, acc: 0.3750.
+Sat Jul 16 18:01:27 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.1774, valid loss: 1.0430, acc: 0.7173.
+Sat Jul 16 18:03:11 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.1282, valid loss: 0.7181, acc: 0.8135.
+test loss 0.6456743011476647 score 0.8378114313629702
+Sat Jul 16 18:46:17 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0763, valid loss: 2.7593, acc: 0.3530.
+Sat Jul 16 18:47:59 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.0481, valid loss: 1.0614, acc: 0.6929.
+Sat Jul 16 18:49:42 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.1254, valid loss: 0.5687, acc: 0.8364.
+Sat Jul 16 18:51:27 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.7705, valid loss: 0.4830, acc: 0.8657.
+Sat Jul 16 18:53:11 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.6017, valid loss: 0.4521, acc: 0.8779.
+Sat Jul 16 18:54:56 2022 Fold 0 Epoch 6, lr: 0.0008051, train loss: 0.5540, valid loss: 0.4957, acc: 0.8745.
+Sat Jul 16 18:56:38 2022 Fold 0 Epoch 7, lr: 0.0007548, train loss: 0.4342, valid loss: 0.2533, acc: 0.9277.
+Sat Jul 16 18:58:23 2022 Fold 0 Epoch 8, lr: 0.0006961, train loss: 0.3504, valid loss: 0.4081, acc: 0.8994.
+Sat Jul 16 19:00:06 2022 Fold 0 Epoch 9, lr: 0.0006308, train loss: 0.3433, valid loss: 0.3699, acc: 0.9072.
+Sat Jul 16 19:01:46 2022 Fold 0 Epoch 10, lr: 0.0005605, train loss: 0.2977, valid loss: 0.2536, acc: 0.9341.
+Sat Jul 16 19:03:30 2022 Fold 0 Epoch 11, lr: 0.0004872, train loss: 0.2764, valid loss: 0.2227, acc: 0.9438.
+Sat Jul 16 19:05:15 2022 Fold 0 Epoch 12, lr: 0.0004128, train loss: 0.1818, valid loss: 0.2170, acc: 0.9448.
+Sat Jul 16 19:06:59 2022 Fold 0 Epoch 13, lr: 0.0003395, train loss: 0.2036, valid loss: 0.2005, acc: 0.9492.
+Sat Jul 16 19:08:43 2022 Fold 0 Epoch 14, lr: 0.0002692, train loss: 0.1645, valid loss: 0.2171, acc: 0.9478.
+Sat Jul 16 19:10:27 2022 Fold 0 Epoch 15, lr: 0.0002039, train loss: 0.1545, valid loss: 0.1685, acc: 0.9570.
+Sat Jul 16 19:12:11 2022 Fold 0 Epoch 16, lr: 0.0001452, train loss: 0.1365, valid loss: 0.1474, acc: 0.9624.
+Sat Jul 16 19:13:55 2022 Fold 0 Epoch 17, lr: 0.0000949, train loss: 0.1302, valid loss: 0.1510, acc: 0.9604.
+Sat Jul 16 19:15:39 2022 Fold 0 Epoch 18, lr: 0.0000542, train loss: 0.1092, valid loss: 0.1388, acc: 0.9658.
+Sat Jul 16 19:17:24 2022 Fold 0 Epoch 19, lr: 0.0000244, train loss: 0.1076, valid loss: 0.1352, acc: 0.9634.
+Sat Jul 16 19:19:07 2022 Fold 0 Epoch 20, lr: 0.0000061, train loss: 0.1124, valid loss: 0.1428, acc: 0.9609.
+test loss 0.1170708362917594 score 0.9716658524670249
+Sun Jul 17 19:52:28 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.0550, valid loss: 2.5459, train_acc: 0.1180, valid_acc: 0.4297.
+Sun Jul 17 19:53:27 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.0577, valid loss: 0.8973, train_acc: 0.4739, valid_acc: 0.7451.
+Sun Jul 17 19:54:27 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0942, valid loss: 0.6623, train_acc: 0.7008, valid_acc: 0.8145.
+Sun Jul 17 19:55:32 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.7535, valid loss: 0.4782, train_acc: 0.7982, valid_acc: 0.8716.
+Sun Jul 17 19:56:37 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.6139, valid loss: 0.4366, train_acc: 0.8359, valid_acc: 0.8867.
+Sun Jul 17 19:58:27 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.2386, valid loss: 3.1461, train_acc: 0.0835, valid_acc: 0.2573.
+Sun Jul 17 19:59:29 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.3700, valid loss: 1.0053, train_acc: 0.4038, valid_acc: 0.7148.
+Sun Jul 17 20:00:23 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.3348, valid loss: 3.6516, train_acc: 0.0772, valid_acc: 0.1987.
+Sun Jul 17 20:01:07 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.4022, valid loss: 4.0609, train_acc: 0.0630, valid_acc: 0.0879.
+Sun Jul 17 20:01:31 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.5244, valid loss: 1.3667, train_acc: 0.4045, valid_acc: 0.6250.
+Sun Jul 17 20:01:55 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 0.9523, valid loss: 0.5973, train_acc: 0.7416, valid_acc: 0.8301.
+Sun Jul 17 20:02:19 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.5881, valid loss: 0.5228, train_acc: 0.8381, valid_acc: 0.8540.
+Sun Jul 17 20:02:44 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.4375, valid loss: 0.3298, train_acc: 0.8818, valid_acc: 0.9048.
+Sun Jul 17 20:04:50 2022 Fold 0 Epoch 1, lr: 0.0003000, train loss: 4.4465, valid loss: 4.1688, train_acc: 0.0462, valid_acc: 0.0664.
+Sun Jul 17 20:05:14 2022 Fold 0 Epoch 2, lr: 0.0009000, train loss: 2.6379, valid loss: 1.3212, train_acc: 0.3945, valid_acc: 0.6294.
+Sun Jul 17 20:05:38 2022 Fold 0 Epoch 3, lr: 0.0009000, train loss: 1.0516, valid loss: 0.6761, train_acc: 0.7149, valid_acc: 0.8179.
+Sun Jul 17 20:06:02 2022 Fold 0 Epoch 4, lr: 0.0008756, train loss: 0.6347, valid loss: 0.5544, train_acc: 0.8246, valid_acc: 0.8369.
+Sun Jul 17 20:06:26 2022 Fold 0 Epoch 5, lr: 0.0008458, train loss: 0.4702, valid loss: 0.3585, train_acc: 0.8735, valid_acc: 0.9019.
+Sun Jul 17 20:06:51 2022 Fold 0 Epoch 6, lr: 0.0008051, train loss: 0.4195, valid loss: 0.3103, train_acc: 0.8854, valid_acc: 0.9116.
+Sun Jul 17 20:07:15 2022 Fold 0 Epoch 7, lr: 0.0007548, train loss: 0.3027, valid loss: 0.3502, train_acc: 0.9143, valid_acc: 0.9038.
+Sun Jul 17 20:07:39 2022 Fold 0 Epoch 8, lr: 0.0006961, train loss: 0.2853, valid loss: 0.3795, train_acc: 0.9221, valid_acc: 0.8960.
+Sun Jul 17 20:08:02 2022 Fold 0 Epoch 9, lr: 0.0006308, train loss: 0.2461, valid loss: 0.2399, train_acc: 0.9370, valid_acc: 0.9331.
+Sun Jul 17 20:08:27 2022 Fold 0 Epoch 10, lr: 0.0005605, train loss: 0.2171, valid loss: 0.2195, train_acc: 0.9446, valid_acc: 0.9370.
+Sun Jul 17 20:08:51 2022 Fold 0 Epoch 11, lr: 0.0004872, train loss: 0.2132, valid loss: 0.2216, train_acc: 0.9414, valid_acc: 0.9468.
+Sun Jul 17 20:09:15 2022 Fold 0 Epoch 12, lr: 0.0004128, train loss: 0.1784, valid loss: 0.1951, train_acc: 0.9504, valid_acc: 0.9414.
+Sun Jul 17 20:09:39 2022 Fold 0 Epoch 13, lr: 0.0003395, train loss: 0.1689, valid loss: 0.2095, train_acc: 0.9570, valid_acc: 0.9409.
+Sun Jul 17 20:10:03 2022 Fold 0 Epoch 14, lr: 0.0002692, train loss: 0.1364, valid loss: 0.1841, train_acc: 0.9641, valid_acc: 0.9512.
+Sun Jul 17 20:10:27 2022 Fold 0 Epoch 15, lr: 0.0002039, train loss: 0.1548, valid loss: 0.1935, train_acc: 0.9590, valid_acc: 0.9502.
+Sun Jul 17 20:10:51 2022 Fold 0 Epoch 16, lr: 0.0001452, train loss: 0.1283, valid loss: 0.1732, train_acc: 0.9653, valid_acc: 0.9521.
+Sun Jul 17 20:11:16 2022 Fold 0 Epoch 17, lr: 0.0000949, train loss: 0.1214, valid loss: 0.1683, train_acc: 0.9660, valid_acc: 0.9575.
+Sun Jul 17 20:11:40 2022 Fold 0 Epoch 18, lr: 0.0000542, train loss: 0.0905, valid loss: 0.1713, train_acc: 0.9744, valid_acc: 0.9546.
+Sun Jul 17 20:12:04 2022 Fold 0 Epoch 19, lr: 0.0000244, train loss: 0.1028, valid loss: 0.1599, train_acc: 0.9717, valid_acc: 0.9570.
+Sun Jul 17 20:12:28 2022 Fold 0 Epoch 20, lr: 0.0000061, train loss: 0.1085, valid loss: 0.1654, train_acc: 0.9722, valid_acc: 0.9556.
+test loss 0.1290864564361982 score 0.9692232535417684
